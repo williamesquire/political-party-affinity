@@ -17,7 +17,7 @@ from catboost import CatBoostClassifier
 
 ## Import scaling
 
-scaling = pd.read_csv("Scaling Values X.csv")
+scaling = pd.read_csv("https://github.com/williamesquire/political-party-affinity/raw/main/Scaling%20Values%20X.csv")
 medians = pd.read_csv("medians.csv")
 
 ## Import model
