@@ -18,8 +18,8 @@ import gunicorn
 
 ## Import scaling
 
-scaling = pd.read_csv("https://github.com/williamesquire/political-party-affinity/raw/main/Scaling%20Values%20X.csv?raw=true")
-medians = pd.read_csv("https://github.com/williamesquire/political-party-affinity/raw/main/medians.csv?raw=true")
+scaling = pd.read_csv("https://github.com/williamesquire/political-party-affinity/raw/main/Scaling%20Values%20X.csv")
+medians = pd.read_csv("https://github.com/williamesquire/political-party-affinity/raw/main/medians.csv")
 
 ## Import model
 
