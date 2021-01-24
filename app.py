@@ -18,12 +18,12 @@ import gunicorn
 
 ## Import scaling
 
-scaling = pd.read_csv("Scaling Values X.csv")
-medians = pd.read_csv("medians.csv")
+scaling = pd.read_csv("https://github.com/williamesquire/political-party-affinity/raw/main/Scaling%20Values%20X.csv?raw=true")
+medians = pd.read_csv("https://github.com/williamesquire/political-party-affinity/raw/main/medians.csv?raw=true")
 
 ## Import model
 
-calibrated = pickle.load(open("party_affinity_model.sav", 'rb'))
+calibrated = pickle.load(open("https://github.com/williamesquire/political-party-affinity/blob/main/party_affinity_model.sav?raw=true", 'rb'))
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
