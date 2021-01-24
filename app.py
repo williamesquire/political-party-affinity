@@ -18,8 +18,9 @@ import gunicorn
 
 ## Import scaling
 
-scaling = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/xscalingvalues.csv?token=ASSQW35Z2XHZZNVON4XKRPDABXK7Y")
-medians = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/medians.csv?token=ASSQW347CZYMLA3OKLYOWKTABXKP4")
+scaling = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/xscalingvalues.csv")
+medians = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/medians.csv")
+medians.index = ["Mean", "Standard Deviation"]
 
 ## Import model
 
@@ -35,8 +36,6 @@ slider_width = "350px"
 slider_padding = "35px"
 text_left_margin = "30px"
 text_size = "13px"
-
-text = "Go away"
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
