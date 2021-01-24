@@ -1,1 +1,1 @@
-web: gunicorn partyaffinityfinal:server
+web: gunicorn app:server
