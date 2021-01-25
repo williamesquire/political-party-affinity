@@ -239,7 +239,7 @@ app.layout = html.Div([
                                        5: {'label': '5', 'style': {'font-size': slider_font_size}},
                                        6: {'label': '6', 'style': {'font-size': slider_font_size}},
                                        7: {'label': '7', 'style': {'font-size': slider_font_size}},
-                                       8: {'label': '9', 'style': {'font-size': slider_font_size}},
+                                       8: {'label': '8', 'style': {'font-size': slider_font_size}},
                                        9: {'label': '9', 'style': {'font-size': slider_font_size}},
                                        10: {'label': '10', 'style': {'font-size': slider_font_size}}})
                          
@@ -300,7 +300,7 @@ app.layout = html.Div([
                                        5: {'label': '5', 'style': {'font-size': slider_font_size}},
                                        6: {'label': '6', 'style': {'font-size': slider_font_size}},
                                        7: {'label': '7', 'style': {'font-size': slider_font_size}},
-                                       8: {'label': '9', 'style': {'font-size': slider_font_size}},
+                                       8: {'label': '8', 'style': {'font-size': slider_font_size}},
                                        9: {'label': '9', 'style': {'font-size': slider_font_size}},
                                        10: {'label': '10', 'style': {'font-size': slider_font_size}}})
                          
@@ -361,7 +361,7 @@ app.layout = html.Div([
                                        5: {'label': '5', 'style': {'font-size': slider_font_size}},
                                        6: {'label': '6', 'style': {'font-size': slider_font_size}},
                                        7: {'label': '7', 'style': {'font-size': slider_font_size}},
-                                       8: {'label': '9', 'style': {'font-size': slider_font_size}},
+                                       8: {'label': '8', 'style': {'font-size': slider_font_size}},
                                        9: {'label': '9', 'style': {'font-size': slider_font_size}},
                                        10: {'label': '10', 'style': {'font-size': slider_font_size}}})
                          
