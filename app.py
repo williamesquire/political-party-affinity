@@ -18,8 +18,8 @@ import gunicorn
 
 ## Import scaling
 
-scaling = pd.read_csv("Data/xscaling.csv")
-medians = pd.read_csv("Data/medians.csv")
+scaling = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/Data/xscaling.csv")
+medians = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/Data/medians.csv")
 scaling.index = ["Mean", "Standard Deviation"]
 
 ## Import model
