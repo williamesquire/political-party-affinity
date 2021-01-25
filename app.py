@@ -24,7 +24,7 @@ scaling.index = ["Mean", "Standard Deviation"]
 
 ## Import model
 
-with open(f'model/model.sav', 'rb') as f:
+with open(f'model/model.pkl', 'rb') as f:
     calibrated = pickle.load(f)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
