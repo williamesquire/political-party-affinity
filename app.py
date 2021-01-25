@@ -402,12 +402,12 @@ app.layout = html.Div([
                         id='rich-rule',
                         value = 4,
                         options=[
-                            {'label': "Strongly Disagree", 'value': 0},
+                            {'label': "Strongly disagree", 'value': 0},
                             {'label': "Disagree", 'value': 1},
-                            {'label': "Neither Agree nor Disagree", 'value': 2},
+                            {'label': "Neither agree nor disagree", 'value': 2},
                             {'label': "Agree", 'value': 3},
-                            {'label': "Strongly Agree", 'value': 4},
-                            {'label': "Don't Know", 'value': 5}],
+                            {'label': "Strongly agree", 'value': 4},
+                            {'label': "Don't know", 'value': 5}],
                         clearable = False,
                         style = {'width': "360px",
                                  "font-size" : text_size})
@@ -498,12 +498,12 @@ app.layout = html.Div([
                         id='trade-union-2',
                         value = 4,
                         options=[
-                            {'label': "Strongly Disagree", 'value': 0},
+                            {'label': "Strongly disagree", 'value': 0},
                             {'label': "Disagree", 'value': 1},
-                            {'label': "Neither Agree nor Disagree", 'value': 2},
+                            {'label': "Neither agree nor disagree", 'value': 2},
                             {'label': "Agree", 'value': 3},
-                            {'label': "Strongly Agree", 'value': 4},
-                            {'label': "Don't Know", 'value': 5}],
+                            {'label': "Strongly agree", 'value': 4},
+                            {'label': "Don't know", 'value': 5}],
                         clearable = False,
                         style = {'width': "360px",
                                  "font-size" : text_size})
@@ -522,7 +522,7 @@ app.layout = html.Div([
                 
                  html.Div([
                 
-                    html.P("10. Should voting system be changed to allow smaller political parties to get a a fairer share of MPs",
+                    html.P("10. Should voting system be changed to allow smaller political parties to get a fairer share of MPs",
                     style = {"font-size" : text_size,
                              "width" : "360px",
                              "padding-bottom" : "0px"}),
