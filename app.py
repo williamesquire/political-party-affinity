@@ -18,14 +18,19 @@ import gunicorn
 
 ## Import scaling
 
-scaling = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/Data/xscaling.csv")
-medians = pd.read_csv("https://raw.githubusercontent.com/williamesquire/political-party-affinity/main/Data/medians.csv")
+scaling = pd.read_csv("Data/xscaling.csv")
+medians = pd.read_csv("Data/medians.csv")
 scaling.index = ["Mean", "Standard Deviation"]
 
-## Import model
+## Import training data
+X = pd.read_csv("Data/X_app.csv")
+y = pd.read_csv("Data/y_app.csv", squeeze = True)
 
-with open(f'Model/model.pkl', 'rb') as f:
-    calibrated = pickle.load(f)
+## Import model and train
+
+cb = CatBoostClassifier(loss_function = "MultiClassOneVsAll", iterations = 400, l2_leaf_reg = 1, depth = 6, verbose = False)
+calibrated = CalibratedClassifierCV(cb, method = 'isotonic')
+calibrated.fit(X, y)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
