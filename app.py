@@ -24,7 +24,7 @@ scaling.index = ["Mean", "Standard Deviation"]
 
 ## Import model
 
-with open(f'model/model.pkl', 'rb') as f:
+with open(f'Model/model.pkl', 'rb') as f:
     calibrated = "test"
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
