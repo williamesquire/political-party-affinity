@@ -22,15 +22,10 @@ scaling = pd.read_csv("Data/xscaling.csv")
 medians = pd.read_csv("Data/medians.csv")
 scaling.index = ["Mean", "Standard Deviation"]
 
-## Import training data
-X = pd.read_csv("Data/X_app.csv")
-y = pd.read_csv("Data/y_app.csv", squeeze = True)
+## Import model
 
-## Import model and train
-
-cb = CatBoostClassifier(loss_function = "MultiClassOneVsAll", iterations = 400, l2_leaf_reg = 1, depth = 6, verbose = False)
-calibrated = CalibratedClassifierCV(cb, method = 'isotonic')
-calibrated.fit(X, y)
+with open(f'Model/model.pkl', 'rb') as f:
+    calibrated = pickle.load(f)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
