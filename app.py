@@ -24,7 +24,8 @@ scaling.index = ["Mean", "Standard Deviation"]
 
 ## Import model
 
-calibrated = pickle.load(open("https://github.com/williamesquire/political-party-affinity/blob/main/party_affinity_model.sav?raw=true", 'rb'))
+with open(f'model/model.sav', 'rb') as f:
+    calibrated = pickle.load(f)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
