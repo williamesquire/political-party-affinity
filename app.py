@@ -393,7 +393,7 @@ app.layout = html.Div([
                 
                  html.Div([
                 
-                    html.P("6. Agree/disagree: there is one rule for the rich and one for the poor",
+                    html.P("6. Agree/disagree: there is currently one law for the rich and one for the poor",
                     style = {"font-size" : text_size,
                              "width" : "360px",
                              "padding-bottom" : "0px"}),
