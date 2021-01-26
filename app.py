@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Dec  5 10:10:30 2020
-
 @author: William.Benn
 """
 
@@ -18,13 +17,13 @@ import gunicorn
 
 ## Import scaling
 
-scaling = pd.read_csv("Data/xscaling.csv")
-medians = pd.read_csv("Data/medians.csv")
+scaling = pd.read_csv("xscaling.csv")
+medians = pd.read_csv("medians.csv")
 scaling.index = ["Mean", "Standard Deviation"]
 
 ## Import model
 
-with open(f'Model/model2.pkl', 'rb') as f:
+with open(f'model2.pkl', 'rb') as f:
     calibrated = pickle.load(f)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -148,8 +147,8 @@ app.layout = html.Div([
                     style = {"width" : question_width,
                              "background-color" : "white",
                              "display" : "flex",
-                             "align-items": "right",
-                             "justify-content": "right",
+                             "align-items": "left",
+                             "justify-content": "left",
                              "padding-top" : "0px"}),
                 
                 ], 
@@ -195,8 +194,8 @@ app.layout = html.Div([
                              "padding-top" : "13px",
                              "padding-bottom" : "5px",
                              "display" : "flex",
-                             "align-items": "right",
-                             "justify-content": "right"}),
+                             "align-items": "left",
+                             "justify-content": "left"}),
                 
                 
                 ], 
