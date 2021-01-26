@@ -17,13 +17,13 @@ import gunicorn
 
 ## Import scaling
 
-scaling = pd.read_csv("xscaling.csv")
-medians = pd.read_csv("medians.csv")
+scaling = pd.read_csv("Data/xscaling.csv")
+medians = pd.read_csv("Data/medians.csv")
 scaling.index = ["Mean", "Standard Deviation"]
 
 ## Import model
 
-with open(f'model2.pkl', 'rb') as f:
+with open(f'Model/model2.pkl', 'rb') as f:
     calibrated = pickle.load(f)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
